@@ -13,8 +13,9 @@
       @mouseenter="clearTimer"
       @mouseleave="startTimer"
       role="alert">
-      <i :class="iconClass" v-if="iconClass"></i>
-      <i :class="typeClass" v-else></i>
+      <img :class="typeClass" v-if="type === 'success'" :src="require('./icon_accept@2x.png')" />
+      <img :class="typeClass" v-if="type === 'error'" :src="require('./icon_error@2x.png')" />      <!-- <i :class="iconClass" v-if="iconClass"></i>
+      <i :class="typeClass" v-else></i> -->
       <slot>
         <p v-if="!dangerouslyUseHTMLString" class="el-message__content">{{ message }}</p>
         <p v-else v-html="message" class="el-message__content"></p>

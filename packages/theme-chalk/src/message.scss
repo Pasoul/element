@@ -97,11 +97,15 @@
   }
 
   & .el-icon-success {
-    color: $--message-success-font-color;
+    // color: $--message-success-font-color;
+    width: 45px;
+    height: 43px;
   }
 
   & .el-icon-error {
-    color: $--message-danger-font-color;
+    width: 45px;
+    height: 43px;
+    // color: $--message-danger-font-color;
   }
 
   & .el-icon-info {
